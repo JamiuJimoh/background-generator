@@ -30,6 +30,8 @@ function setGradient() {
 	gradientProp();
 }
 
+window.setInterval(randomColor, 3000)
+
 color1.addEventListener('input', setGradient);
 color2.addEventListener('input', setGradient);
 btn.addEventListener('click', randomColor);
