@@ -12,8 +12,16 @@ function randomColor() {
     const rr = Math.floor(Math.random() * 256)
     const gg = Math.floor(Math.random() * 256)
     const bb = Math.floor(Math.random() * 256)
-    body.style.background = `linear-gradient(to right, rgb(${r}, ${g}, ${b}), rgb(${rr}, ${gg}, ${bb}))`;
+    const convertRgb1 = hex(r, g, b)
+    const convertRgb2 = hex(rr, gg, bb)
+    body.style.background = `linear-gradient(to right, ${convertRgb1}, ${convertRgb2})`;
+    color1.value = convertRgb1
+    color2.value = convertRgb2
     css.textContent = body.style.background + ";"
+}
+
+function hex(r, g, b) {
+    return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
 
 function gradientProp() {
