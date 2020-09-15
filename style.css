@@ -215,9 +215,36 @@ h3 {
 }
 
 button {
+<<<<<<< HEAD
     color: white;
     border-radius: 10%;
     border: none;
     background-color: steelblue;
 >>>>>>> 352e3c55cb1e3d39ca15f64ddcd0d9235c64e28c
+=======
+    box-shadow: -1px 12px 26px -9px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 6px 7px;
+    outline: none;
+    text-decoration: none;
+    text-shadow: 0px 5px 4px #3d768a;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color: #408c99;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+>>>>>>> 578b8623b8bf41e218b7376a2e9072a3706a0c15
 }
